@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leonidas - Asistente Normativo</title>
+  
+  <link rel="stylesheet" href="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/themes/df-messenger-default.css">
+  <script src="https://www.gstatic.com/dialogflow-console/fast/df-messenger/prod/v1/df-messenger.js"></script>
+  
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+      max-width: 500px;
+    }
+    h1 { color: #1a73e8; margin-bottom: 10px; }
+    p { color: #555; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <h1>Proyecto Hermes / Leonidas</h1>
+    <p>Haz clic en el icono flotante en la esquina inferior derecha para iniciar el análisis normativo y operativo.</p>
+  </div>
+
+  <df-messenger
+    location="europe-west3"
+    project-id="Hermes2026-499716"
+    agent-id="5b7c1596-7729-465d-9bb5-c1756a9b9693"
+    language-code="es">
+    <df-messenger-chat-bubble chat-title="Leonidas"></df-messenger-chat-bubble>
+  </df-messenger>
+
+</body>
+</html>
